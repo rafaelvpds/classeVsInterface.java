@@ -2,7 +2,7 @@ package model.entities;
 
 import model.enums.Colors;
 
-public class Circle extends Shape {
+public class Circle extends AbstractShape {
 
 	private double raio;
 
@@ -24,7 +24,7 @@ public class Circle extends Shape {
 	@Override
 	public String toString() {
 
-		return getColor() + " Area: " + String.format("%.2f", area());
+		return " Area: " + String.format("%.2f", area());
 	}
 
 }

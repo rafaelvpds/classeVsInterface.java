@@ -2,7 +2,7 @@ package model.entities;
 
 import model.enums.Colors;
 
-public class Retangle extends Shape {
+public class Retangle extends AbstractShape {
 	private double width;
 	private double lenght;
 
@@ -25,7 +25,7 @@ public class Retangle extends Shape {
 	@Override
 	public String toString() {
 
-		return getColor() + " Area: " + String.format("%.2f", area());
+		return " Area: " + String.format("%.2f", area());
 
 	}
 
